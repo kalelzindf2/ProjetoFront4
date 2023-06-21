@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    display: flex;
+    padding: 15px;
+    align-content: center;
+    justify-content:space-between ;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+
+#barrapesquisa {width: 20%; height: 45px;}
+#barrapesquisa span {width: 15%;}
+
+
+#dropdown {height: 45px; width: auto;}
+#carrinho {display: flex; width: 180px;}
+#carrinho button {height: 43px; width: 50%; border: 0px solid; background-color: rgb(255, 255, 255);}
+.subheader {background-color: black; color: aliceblue; justify-content: space-between ; height: 33px;}
+#tenis {text-align: center; padding-top: 0.2%;}
+#tenis a {padding: 30px; text-decoration: none; color: white;}
