@@ -17,31 +17,45 @@
   <section id="cabecalho">
     <header>
       <div class="column">
-        <div class="input-group mb-3" id="barrapesquisa">
+        <div class="input-group" id="barrapesquisa">
           <input type="text" class="form-control" placeholder="Procure o que voce deseja."
-            aria-label="Recipient's username" aria-describedby="basic-addon2" >
+            aria-label="Recipient's username" aria-describedby="basic-addon2">
           <span class="input-group-text" id="basic-addon2"><a href=""> <img src="/Imagens/search.png" alt=""
-                width="13%"></a></span>
-          <div>
+                width="80%"></a></span>
+
           </div>
 
-          <div class="column">
+          <div >
             <img src="/Imagens/Vertical Logo Black.png" alt="" width="10%" id="street">
           </div>
 
-          <div class="column" id="carrinho">
-            <select class="form-select" aria-label="Default select example" id="dropdown">
+          <div  id="carrinho">
+            <select class="form-select" aria-label="Default select example" id="dropdown" onchange="redirectToLink()">
+              <option selected>
               <option selected> <img
-                  src="/Imagens/pngtree-avatar-vector-icon-white-transparent-background-png-image_1978010.jpg" alt="">
+                  src="/Imagens/pngtree-avatar-vector-icon-white-transparent-background-png-image_1978010.jpg" alt="" >
                 Minha conta </option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="login.html">Cadastre-se</option>
+              <option value="2">Perfil</option>
+              <option value="3">Suporte</option>
             </select>
-            <button><img src="/Imagens/5465858.png" alt="" width="15%"></button>
-          </div>
+            <button><img src="/Imagens/5465858.png" alt="" width="20%" style="margin-right: 80%;"></button>
+           </div>
+      </div>
+
     </header>
   </section>
+  <script>
+    function redirectToLink() {
+      var selectElement = document.getElementById("dropdown");
+      var selectedValue = selectElement.value;
+      
+      if (selectedValue) {
+        window.location.href = selectedValue;
+      }
+    }
+  </script>
+ 
 
   <section class="carrosel_kalel">
 
@@ -103,28 +117,94 @@
         <img src="/Imagens/courtvision.webp" width="60%">
         <p>NIKE COURT VISION <br> (sail/brown/yellow)</p>
         <h4> R$ 499,90</h4> <br>
-        <button>VER MAIS</button>
+        <button class="botao_kalel">VER MAIS</button>
       </div>
       <div>
-        <img src="/Imagens/courtvision.webp" width="60%">
+        <img src="/Imagens/branco.webp" width="60%">
         <p>NIKE COURT VISION <br> (sail/brown/yellow)</p>
         <h4> R$ 499,90</h4> <br>
-        <button>VER MAIS</button>
+        <button class="botao_kalel">VER MAIS</button>
       </div>
       <div>
-        <img src="/Imagens/courtvision.webp" width="60%">
+        <img src="/Imagens/amarelo.webp" width="60%">
         <p>NIKE COURT VISION <br> (sail/brown/yellow)</p>
         <h4> R$ 499,90</h4> <br>
-        <button>VER MAIS</button>
+        <button class="botao_kalel">VER MAIS</button>
       </div>
       <div>
-        <img src="/Imagens/courtvision.webp" width="60%">
+        <img src="/Imagens/tenispreto.webp" width="60%">
         <p>NIKE COURT VISION <br> (sail/brown/yellow)</p>
         <h4> R$ 499,90</h4> <br>
-        <button>VER MAIS</button>
+        <button class="botao_kalel">VER MAIS</button>
       </div>
     </div>
   </section>
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Sobre a loja</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Somente produtos
+                originais</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Duvidas</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fale conosco</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Perguntas gerais</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trocas e devoluções</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Contato</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Telefone: (61) 99590624</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">E-mail:
+                StreetElements@gmail.com </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Inscreva-se para receber novidades</h5>
+            <p>Novidades mensais para você.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Endereço de E-mail</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de Email">
+              <button class="btn btn-primary" type="button">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2023 Street Elements, Todos os direitos reservados.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

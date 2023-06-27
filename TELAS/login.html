@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Elements</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="/STYLE/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</head>
+
+  <body>
+    <section id="cabecalho">
+      <header>
+        <div class="column">
+          <div class="input-group" id="barrapesquisa">
+            <input type="text" class="form-control" placeholder="Procure o que voce deseja."
+              aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"><a href=""> <img src="/Imagens/search.png" alt=""
+                  width="80%"></a></span>
+  
+            </div>
+  
+            <div >
+              <img src="/Imagens/Vertical Logo Black.png" alt="" width="10%" id="street">
+            </div>
+  
+            <div  id="carrinho">
+              <select class="form-select" aria-label="Default select example" id="dropdown" onchange="redirectToLink()">
+                <option selected>
+                <option selected> <img
+                    src="/Imagens/pngtree-avatar-vector-icon-white-transparent-background-png-image_1978010.jpg" alt="">
+                  Minha conta </option>
+                <option value="login.html">Cadastre-se</option>
+                <option value="2">Perfil</option>
+                <option value="3">Suporte</option>
+              </select>
+              <button><img src="/Imagens/5465858.png" alt="" width="20%" style="margin-right: 80%;"></button>
+             </div>
+        </div>
+  
+      </header>
+    </section>
+    
+    <div class="container_kath">
+      <div class="form_kath">
+        <form action="#">
+          <div class="form-header_kath">
+            <div class="title_kath">
+              <h1>Cadastre-se</h1>
+            </div>
+            <div class="login-button_kath">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </div>
+
+          <div class="input-group_kath">
+            <div class="input-box_kath">
+              <label for="firstname">Primeiro Nome</label>
+              <input
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="Digite seu primeiro nome"
+                required
+              />
+            </div>
+
+            <div class="input-box_kath">
+              <label for="lastname">Sobrenome</label>
+              <input
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Digite seu sobrenome"
+                required
+              />
+            </div>
+            <div class="input-box_kath">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="input-box_kath">
+              <label for="number">Celular</label>
+              <input
+                id="number"
+                type="tel"
+                name="number"
+                placeholder="(xx) xxxx-xxxx"
+                required
+              />
+            </div>
+
+            <div class="input-box_kath">
+              <label for="password">Senha</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+
+            <div class="input-box_kath">
+              <label for="confirmPassword">Confirme sua Senha</label>
+              <input
+                id="confirmPassword"
+                type="password"
+                name="confirmPassword"
+                placeholder="Digite sua senha novamente"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gender-inputs_kath">
+            <div class="gender-title_kath">
+              <h6>Gênero</h6>
+            </div>
+
+            <div class="gender-group_kath">
+              <div class="gender-input_kath">
+                <input id="female" type="radio" name="gender" />
+                <label for="female">Feminino</label>
+              </div>
+
+              <div class="gender-input_kath">
+                <input id="male" type="radio" name="gender" />
+                <label for="male">Masculino</label>
+              </div>
+
+              <div class="gender-input_kath">
+                <input id="others" type="radio" name="gender" />
+                <label for="others">Outros</label>
+              </div>
+
+              <div class="gender-input_kath">
+                <input id="none" type="radio" name="gender" />
+                <label for="none">Prefiro não dizer</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="continue-button_kath">
+            <button><a href="#">Continuar</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Sobre a loja</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Somente produtos
+                  originais</a></li>
+  
+            </ul>
+          </div>
+  
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Duvidas</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fale conosco</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Perguntas gerais</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trocas e devoluções</a></li>
+  
+            </ul>
+          </div>
+  
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Contato</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Telefone: (61) 99590624</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">E-mail:
+                  StreetElements@gmail.com </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+  
+            </ul>
+          </div>
+  
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Inscreva-se para receber novidades</h5>
+              <p>Novidades mensais para você.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Endereço de E-mail</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de Email">
+                <button class="btn btn-primary" type="button">Cadastrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 Street Elements, Todos os direitos reservados.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" />
+                </svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

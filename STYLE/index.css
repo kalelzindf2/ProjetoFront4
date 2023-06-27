@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Darumadrop+One&family=Josefin+Sans&family=Poppins&display=swap');
+
+body * {
+    font-family: 'Bangers', cursive;
+    font-family: 'Darumadrop One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
+header{
+    display: flex;
+    flex-direction: row;
+}
 
-#cabecalho { 
+
+#cabecalho {
     text-align: center;
     display: flex;
     z-index: 100;
@@ -14,20 +30,26 @@
     justify-content: center;
     flex-basis: auto;
     top: 0;
+
 }
-.carrosel_kalel { margin-top: 7%;}
+
+.carrosel_kalel {
+    margin-top: 7%;
+}
+
 .carousel slide {
-    
+
     z-index: 1;
 }
 
 .column {
-    flex-basis: 31%;
-    flex-wrap: nowrap;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
 }
 
-.container-fluid{
+.container-fluid {
     margin-left: auto;
     width: 50%;
 }
@@ -38,10 +60,16 @@
 
 #barrapesquisa {
     height: 45px;
+    width: 30%;
+    display: flex;
+    justify-items: center;
 }
+
 
 #barrapesquisa span {
     width: 15%;
+    margin-right: 30%;
+    justify-content: left;
 }
 
 
@@ -49,9 +77,22 @@
     height: 45px;
     width: auto;
 }
-    
+
 #carrinho {
     display: flex;
+    align-items: center;
+    width: 20%;
+    
+}
+
+#carrinho button {
+    height: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: 0px solid;
+    background-color: rgb(255, 255, 255);
 }
 
 #carrinho button {
@@ -109,7 +150,8 @@
     justify-content: center;
 }
 
-.parcele {display: flex;
+.parcele {
+    display: flex;
     flex-wrap: wrap;
     margin-top: 3%;
     width: 95%;
@@ -127,67 +169,318 @@
     display: flex;
     width: 100%;
     text-align: center;
-    
-  }
-  
-  .tenis_div {
+
+}
+
+.tenis_div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-  
-  .tenis_div > div {
+
+.tenis_div>div {
     flex-basis: calc(20.33% - 20px);
     margin: 10px;
-    border: 2px solid #000;
+    border: 2px solid #2e2c2c;
     padding: 30px;
     margin-top: 4%;
-    
-    
-  }
-  
-  @media (max-width: 768px) {
-    .tenis_div > div {
-      flex-basis: 50%;
-    }
-    #cabecalho { 
-        text-align: center;
-        display: flex;
-        z-index: 100;
-        width: 100%;
-        position: relative;
-        background-color: white;
-        padding: 15px;
-        justify-content: center;
-        
-    }
-    
-    
-       
-    }
-    #dropdown {
-        height: 45px;
-        width: auto;
-    }
-    #barrapesquisa {
-        height: 45px;
-    }
-    
-   
-  
+    border-radius: 15px;
 
-  @media (max-width: 322px) { 
-   
-  #cabecalho { 
+
+}
+
+.botao_kalel {
+    width: 70%;
+    height: 35px;
+    color: white;
+    background-color: white;
+    border-bottom: white;
+    border: rgb(15, 3, 3);
+
+}
+
+.botao_kalel:hover {
+    width: 70%;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border-bottom: rgb(190, 178, 2);
+    border: rgb(189, 160, 0);
+    border-radius: 7px;
+
+}
+.container_kath {
+    margin-top:8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(8, 8, 8, 0.212);
+}
+
+
+.form_kath {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header_kath {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button_kath {
+    display: flex;
+    align-items: center;
+}
+
+.login-button_kath button {
+    border: none;
+    background-color: #030133;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button_kath button:hover {
+    background-color: #030133;
+}
+
+.login-button_kath button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header_kath h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #030133;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group_kath {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box_kath {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box_kath input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box_kath input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box_kath input:focus-visible {
+    outline: 1px solid #030133;
+}
+
+.input-box_kath
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box_kath input::placeholder {
+    color: #000000be;
+}
+
+.gender-group_kath {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input_kath {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input_kath input {
+    margin-right: 0.35rem;
+}
+
+.gender-input_kath {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button_kath button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #030133;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button_kath button:hover {
+    background-color: #030133;
+}
+
+.continue-button_kath button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image_kath {
+        display: none;
+    }
+    .container_kath {
+        width: 50%;
+    }
+    .form_kath {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container_kath {
+        width: 90%;
+        height: auto;
+    }
+    .input-group_kath {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs_kath {
+        margin-top: 2rem;
+    }
+    .gender-group_kath {
+        flex-direction: column;
+    }
+    .gender-title_kath h6 {
+        margin: 0;
+    }
+    .gender-input_kath {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 974px) {
+    .tenis_div>div {
+        flex-basis: 50%;
+    }
+
+    #cabecalho {
     text-align: center;
     display: flex;
     z-index: 100;
     width: 100%;
-    height: 150px;
-    position: relative;
-    background-color: rgb(255, 255, 255);
+    position: fixed;
+    background-color: white;
     padding: 15px;
     justify-content: center;
-    
+    flex-basis: auto;
+    top: 0;
+}
+.carrosel_kalel {margin-top: 15%;}
+
 }
 
+@media (min-width: 492px) and (max-width: 644px) {
+    .carrosel_kalel {margin-top: 20%;}
+
+
+}    
+
+@media (min-width: 324px) and (max-width: 492px) {
+    .carrosel_kalel {margin-top: 30%;}
+
+
+}    
+
+@media (max-width: 768px) {
+    .tenis_div>div {
+        flex-basis: 50%;
+    }
+
+    #cabecalho {
+    text-align: center;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 15px;
+    justify-content: center;
+    flex-basis: auto;
+    top: 0;
+
+}
+
+
+
+}
+
+#dropdown {
+    height: 45px;
+    width: auto;
+}
+
+#barrapesquisa {
+    height: 45px;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+
+
+
+@media (max-width: 322px) {
+
+    #cabecalho {
+        text-align: center;
+        display: flex;
+        z-index: 100;
+        width: 100%;
+        height: 150px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        justify-content: center;}
+        
+    .carrosel_kalel {margin-top: 30%; width: 100%;}
+    
+
+    }
